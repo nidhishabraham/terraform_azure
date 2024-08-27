@@ -1,6 +1,6 @@
 # Azure Infrastructure using Terraform 
 
-1. Create the Terraform Manifest Files
+# 1. Create the Terraform Manifest Files
 
 [main.tf] This file defines the Azure provider and backend for storing the Terraform state.
 
@@ -21,7 +21,7 @@ Subnet: Creates a subnet within the VNet with a /24 address space.
 Network Interface: Configures a NIC connected to the subnet.
 Virtual Machine: Provisions an Ubuntu VM, specifying storage, network, and OS configurations.
 
-2. Commands to Execute
+# 2. Commands to Execute
 Initialize Terraform  - This command initializes the working directory containing Terraform configuration files. It downloads the Azure provider and sets up the backend.
 
 terraform init
@@ -42,7 +42,7 @@ Destroy the Resources (Optional) - If you want to destroy the resources created 
 
 terraform destroy
 
-3. Explanation of Steps
+# 3. Explanation of Steps
 
 Initialization (terraform init): Prepares the working directory for use with Terraform, including downloading the necessary provider plugins.
 
@@ -52,9 +52,10 @@ Applying (terraform apply): Executes the plan created in the planning step and m
 
 Destroying (terraform destroy): Removes all the resources managed by Terraform, essentially tearing down the infrastructure.
 
-4. Replace Placeholder Values
+# 4. Replace Placeholder Values
 
 <AZURE_KEY>: Replace with the actual key for the state file in your Azure Storage Account.
+
 <SUBSCRIPTION_ID>: Replace with your actual Azure subscription ID.
 
 These Terraform files and commands will provision an Azure Resource Group, a Virtual Network, a Subnet, a Network Interface, and a Virtual Machine as defined in the configuration.
