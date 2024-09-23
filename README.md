@@ -24,23 +24,23 @@ Virtual Machine: Provisions an Ubuntu VM, specifying storage, network, and OS co
 # 2. Commands to Execute
 Initialize Terraform  - This command initializes the working directory containing Terraform configuration files. It downloads the Azure provider and sets up the backend.
 
-terraform init
+# terraform init
 
 Plan the Deployment - The terraform plan command creates an execution plan, showing what actions Terraform will take to achieve the desired state.
 
-terraform plan -out=tfplan
+# terraform plan -out=tfplan
 
 -out=tfplan saves the plan to a file, which can be applied later.
 
 Apply the Plan - This command applies the changes required to reach the desired state of the configuration.
 
-terraform apply tfplan
+# terraform apply tfplan
 
 This command reads the saved plan from tfplan and applies it.
 
 Destroy the Resources (Optional) - If you want to destroy the resources created by Terraform, use the following command:
 
-terraform destroy
+# terraform destroy
 
 # 3. Explanation of Steps
 
